@@ -9,6 +9,10 @@ from django.db.models import Q
 from django.db.models import Count
 
 def index(request):
+    # GJ Error for Log Test
+    print("Before DivZero Error GJ")
+    3/0
+    #print("After DivZero Error GJ")
     page = request.GET.get('page', '1')  # 페이지
     kw = request.GET.get('kw', '')  # 검색어
 
