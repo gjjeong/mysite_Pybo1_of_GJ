@@ -16,7 +16,7 @@ logger = logging.getLogger('pybo')
 def index(request):
     # GJ Error for Log Test
     #print("Before DivZero Error GJ")
-    3/0
+    #3/0
     #print("After DivZero Error GJ")
 
     # GJ for pybo app Logger
