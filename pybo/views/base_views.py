@@ -26,8 +26,8 @@ def index(request):
     kw = request.GET.get('kw', '')  # 검색어
 
     # GJ for sorting
-    #so = request.GET.get('so', 'recent')
-    so = request.GET.get('so', '')
+    so = request.GET.get('so', 'recent')
+    #so = request.GET.get('so', '')
 
     if so == 'recommend':
         question_list = Question.objects.annotate(
